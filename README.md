@@ -1,5 +1,5 @@
 # question-categorization
-Description
+### NLP and question categorization
 
 #### Dependencies
 * python3
@@ -10,7 +10,17 @@ Description
 * xgboost
 
 ## The problem
-[Dataset](http://cogcomp.org/Data/QA/QC/)
+The problem presented here is to categorize questions according to 6 coarse categories and 50 fine sub-categories.
+The 6 coarse categories are abbreviation, description, entity, human, location, and number.
+Each coarse category has several fine sub-categories.
+For example, description can be broken into:
+* **description**
+  * definition
+  * description
+  * manner
+  * reason
+
+The [training and test data](http://cogcomp.org/Data/QA/QC/) (included here) are publicly available.  There are 5452 (500) labelled training (test) questions.
 
 ## My models
 I tried several different feature extractors and classifiers.  Here I present results using a bag of words feature extractor and two classifiers: extra trees and extreme gradient boosted trees (XGBoost).  The Extra-Trees classifiers were fast to train nd therefore useful for prototyping and for selecting good hyperparameters for the bag of words model.  The XGBoost classifier was then later trained to develop my final fiducial model.
