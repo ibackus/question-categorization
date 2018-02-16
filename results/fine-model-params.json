@@ -1,0 +1,9 @@
+{
+  "classifier__max_depth": 200,
+  "classifier__n_estimators": 777,
+  "features__ngram_range": [
+    1,
+    2
+  ],
+  "features__stop_words": null
+}

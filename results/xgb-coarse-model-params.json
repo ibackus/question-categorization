@@ -1,0 +1,9 @@
+{
+  "classifier__colsample_bytree": 0.7141414141414142,
+  "classifier__gamma": 0.6767676767676768,
+  "classifier__learning_rate": 0.08415227014807736,
+  "classifier__max_delta_step": 0,
+  "classifier__max_depth": 61,
+  "classifier__n_estimators": 278,
+  "classifier__subsample": 0.8878787878787879
+}

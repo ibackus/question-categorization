@@ -1,0 +1,173 @@
+/usr/lusers/ibackus/src/python/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+/usr/lusers/ibackus/src/python/sklearn/metrics/classification.py:1137: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples.
+  'recall', 'true', average, warn_for)
+
+----------------------------------------------------------
+Extra-Trees classifiers + bag of words
+
+Refitting on: coarse_category
+
+
+Results summary for: coarse_category
+             precision    recall  f1-score   support
+
+       abbr       1.00      0.78      0.88         9
+       desc       0.76      0.99      0.86       138
+       enty       0.73      0.73      0.73        94
+        hum       0.90      0.85      0.87        65
+        loc       0.97      0.79      0.87        81
+        num       1.00      0.81      0.90       113
+
+avg / total       0.86      0.85      0.85       500
+
+Accuracy: 0.846
+Baseline accuracy: 0.229273661042
+Matthews Correlation Coefficient: 0.809141176246
+Refitting on: fine_category
+
+
+Results summary for: fine_category
+                precision    recall  f1-score   support
+
+      abbr:abb       1.00      1.00      1.00         1
+      abbr:exp       1.00      0.75      0.86         8
+      desc:def       0.69      1.00      0.82       123
+     desc:desc       0.60      0.43      0.50         7
+   desc:manner       0.33      1.00      0.50         2
+   desc:reason       1.00      1.00      1.00         6
+   enty:animal       0.83      0.31      0.45        16
+     enty:body       1.00      0.50      0.67         2
+    enty:color       1.00      0.90      0.95        10
+   enty:cremat       0.00      0.00      0.00         0
+ enty:currency       1.00      0.33      0.50         6
+   enty:dismed       0.00      0.00      0.00         2
+    enty:event       0.00      0.00      0.00         2
+     enty:food       1.00      0.25      0.40         4
+   enty:instru       1.00      1.00      1.00         1
+     enty:lang       1.00      0.50      0.67         2
+    enty:other       0.42      0.42      0.42        12
+    enty:plant       1.00      0.20      0.33         5
+  enty:product       0.00      0.00      0.00         4
+    enty:sport       1.00      1.00      1.00         1
+enty:substance       0.83      0.33      0.48        15
+ enty:techmeth       1.00      1.00      1.00         1
+   enty:termeq       0.67      0.57      0.62         7
+      enty:veh       0.00      0.00      0.00         4
+      hum:desc       0.75      1.00      0.86         3
+        hum:gr       1.00      0.50      0.67         6
+       hum:ind       0.69      0.95      0.80        55
+     hum:title       0.00      0.00      0.00         1
+      loc:city       1.00      0.78      0.88        18
+   loc:country       1.00      1.00      1.00         3
+     loc:mount       1.00      0.33      0.50         3
+     loc:other       0.85      0.82      0.84        50
+     loc:state       0.83      0.71      0.77         7
+     num:count       0.82      1.00      0.90         9
+      num:date       1.00      0.94      0.97        47
+      num:dist       1.00      0.56      0.72        16
+     num:money       1.00      0.67      0.80         3
+     num:other       1.00      0.42      0.59        12
+      num:perc       1.00      0.67      0.80         3
+    num:period       0.64      0.88      0.74         8
+     num:speed       1.00      0.50      0.67         6
+      num:temp       1.00      0.60      0.75         5
+    num:weight       1.00      1.00      1.00         4
+
+   avg / total       0.80      0.78      0.75       500
+
+Accuracy: 0.776
+Baseline accuracy: 0.176449009538
+Matthews Correlation Coefficient: 0.750544175492
+----------------------------------------------------------
+Accuracy summary (name, accuracy, baseline, MCC):
+coarse_category 0.846 0.229273661042 0.809141176246
+fine_category 0.776 0.176449009538 0.750544175492
+
+----------------------------------------------------------
+XGBoost classifiers + bag of words
+
+
+
+Results summary for: coarse_category
+             precision    recall  f1-score   support
+
+       abbr       1.00      0.78      0.88         9
+       desc       0.84      0.97      0.90       138
+       enty       0.75      0.78      0.76        94
+        hum       0.92      0.89      0.91        65
+        loc       0.86      0.83      0.84        81
+        num       1.00      0.85      0.92       113
+
+avg / total       0.88      0.87      0.87       500
+
+Accuracy: 0.87
+Baseline accuracy: 0.229273661042
+Matthews Correlation Coefficient: 0.837157620666
+
+
+Results summary for: fine_category
+                precision    recall  f1-score   support
+
+      abbr:abb       1.00      1.00      1.00         1
+      abbr:exp       1.00      0.75      0.86         8
+      desc:def       0.79      0.99      0.88       123
+     desc:desc       0.50      0.57      0.53         7
+   desc:manner       0.50      1.00      0.67         2
+   desc:reason       1.00      0.83      0.91         6
+   enty:animal       1.00      0.56      0.72        16
+     enty:body       1.00      0.50      0.67         2
+    enty:color       1.00      1.00      1.00        10
+   enty:cremat       0.00      0.00      0.00         0
+ enty:currency       1.00      0.33      0.50         6
+   enty:dismed       0.25      0.50      0.33         2
+    enty:event       0.00      0.00      0.00         2
+     enty:food       1.00      0.50      0.67         4
+   enty:instru       0.50      1.00      0.67         1
+     enty:lang       1.00      1.00      1.00         2
+    enty:other       0.33      0.42      0.37        12
+    enty:plant       1.00      0.20      0.33         5
+  enty:product       0.00      0.00      0.00         4
+    enty:sport       1.00      1.00      1.00         1
+enty:substance       0.83      0.33      0.48        15
+ enty:techmeth       1.00      1.00      1.00         1
+   enty:termeq       0.56      0.71      0.63         7
+      enty:veh       0.50      0.25      0.33         4
+      hum:desc       0.75      1.00      0.86         3
+        hum:gr       0.43      0.50      0.46         6
+       hum:ind       0.91      0.95      0.93        55
+     hum:title       0.00      0.00      0.00         1
+      loc:city       0.94      0.83      0.88        18
+   loc:country       0.50      1.00      0.67         3
+     loc:mount       0.67      0.67      0.67         3
+     loc:other       0.81      0.76      0.78        50
+     loc:state       0.56      0.71      0.63         7
+     num:count       0.82      1.00      0.90         9
+      num:date       1.00      0.94      0.97        47
+      num:dist       1.00      0.56      0.72        16
+     num:money       0.29      0.67      0.40         3
+     num:other       0.71      0.42      0.53        12
+      num:perc       1.00      0.67      0.80         3
+    num:period       0.88      0.88      0.88         8
+     num:speed       1.00      0.50      0.67         6
+      num:temp       1.00      0.40      0.57         5
+    num:weight       1.00      1.00      1.00         4
+
+   avg / total       0.82      0.79      0.78       500
+
+Accuracy: 0.79
+Baseline accuracy: 0.176449009538
+Matthews Correlation Coefficient: 0.765714836877
+----------------------------------------------------------
+Accuracy summary (name, accuracy, baseline, MCC):
+coarse_category 0.87 0.229273661042 0.837157620666
+fine_category 0.79 0.176449009538 0.765714836877
+
+Fine category results, arranged by coarse category:
+      correct  count  n_fine_categories  accuracy
+abbr        7      9                  2  0.777778
+desc      133    138                  4  0.963768
+enty       47     94                 22  0.500000
+hum        58     65                  4  0.892308
+loc        63     81                  5  0.777778
+num        87    113                 13  0.769912

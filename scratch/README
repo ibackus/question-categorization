@@ -1,0 +1,4 @@
+This folder contains a couple of scratch-work scripts for generating some
+hierarchical classifiers that I abandoned in the end due to poor performance.
+Note that these are in a dirty state and are in python 2.x (rather than 3)
+
