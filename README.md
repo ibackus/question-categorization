@@ -22,6 +22,8 @@ For example, description can be broken into:
 
 The [training and test data](http://cogcomp.org/Data/QA/QC/) (included here) are publicly available.  There are 5452 (500) labelled training (test) questions.
 
+We can use the work of [Xin Lie & Dan Roth (2001)](http://www.aclweb.org/anthology/C02-1150) as a target. 
+
 ## My models
 I tried several different feature extractors and classifiers.  Here I present results using a bag of words feature extractor and two classifiers: extra trees and extreme gradient boosted trees (XGBoost).  The Extra-Trees classifiers were fast to train nd therefore useful for prototyping and for selecting good hyperparameters for the bag of words model.  The XGBoost classifier was then later trained to develop my final fiducial model.
 
